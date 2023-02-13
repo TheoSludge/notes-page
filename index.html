@@ -18,7 +18,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/custom.css">
-  <!-- Scirpts -->
+  <!-- Scripts -->
   <script src="scripts/main.js" defer></script>
 </head>
 <body>
@@ -28,51 +28,62 @@
         <h1>what ToDo?</h1>
         <p>Experience the simplicity and power of our note taking web page.</p>
       </div>
-      
-      <div class="header-subtitle">
-        <h3>Let's get started on your day!</h3>
-      </div>
+      <div class="divider"></div>
+      <h3>Let's get started on your day!</h3>
     </div>
     <div class="main">
-      <div class="notes">
+      <div class="pointer">
+        <h2>Try dragging the notes around.</h2>
+      </div>
+      <div class="whiteboard">
         <div class="note red">
-          <h2>Simplicity</h2>
-          <p>Simplify your note taking process with our innovative web page.</p>
-          <p>With its intuitive design and powerful features, you can keep track of your ideas, thoughts, and to-do lists with ease.</p>
+          <div class="note-text">
+            <h2>Simplicity</h2>
+            <p>Simplify your note taking process with our innovative web page.</p>
+            <p>With its intuitive design and features, keep track of your ideas, thoughts, and to-do lists with ease.</p>
+          </div>
         </div>
         <div class="note green">
-          <h2>Reliability</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eius ratione corrupti, earum alias veniam voluptatum accusantium.</p>
+          <div class="note-text">
+            <h2>Reliability</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse earum alias veniam voluptatum accusantium.</p>
+          </div>
         </div>
         <div class="note blue">
-          <h2>Security</h2>
-          <p>Amet laudantium doloremque veritatis cupiditate laborum rem dolorum blanditiis veniam molestiae maiores dolorem praesentium atque vero sunt ad suscipit ut!</p>
-          <p>A debitis dolorum unde ad error quidem fugit nemo quod sit?</p>
+          <div class="note-text">
+            <h2>Security</h2>
+            <p>Amet laudantium doloremque veritatis cupiditate laborum rem dolorum ut!</p>
+            <p>A debitis dolorum unde ad error quidem fugit nemo quod sit?</p>
+          </div>
         </div>
       </div>
       <div class="signup">
-        <div class="signup-prompt">
-          <h3>Lorem ipsum dolor sit!</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet nisi placeat excepturi officia, a maxime sapiente quod iure delectus eius repellendus. Nemo enim consequatur minus a libero blanditiis magni.</p>
-        </div>
-        <div class="form">
+        <h3 class="signup-title">Lorem ipsum dolor sit!</h3>
+        <p class="signup-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet nisi placeat excepturi officia, a maxime sapiente quod iure delectus eius repellendus. Nemo enim consequatur minus a libero blanditiis magni.</p>
+        <div class="signup-form">
           <input type="email" class="input-email" placeholder="yourname@email.com">
           <button type="submit" class="button-email">Send</button>
         </div>
       </div>
-      <div class="notes">
-        <img class="whiteboard-top" src="#" alt="A handfull of notes connected with a red string.">
-        <div class="notes-prompt">
-          <h3>Pellentesque fringilla at nulla cursus</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae pariatur natus a facilis placeat consequatur quibusdam ex tempora, quas odit, sunt rem aut dolores ab? Neque reprehenderit consequuntur error natus?</p>
-        </div>
+      <div class="connected">
+        <picture>
+          <source media = "(min-width: 900px)" srcset = "assets/images/Frame-1.png">
+          <source media = "(max-width: 910px)" srcset = "assets/images/Frame-2.png">
+          <img src = "assets/images/Frame-1.png" alt = "A bunch of notes connected with a red string.">
+        </picture>
       </div>
-      <div class="notes page">
+      <div class="notes-info">
+        <h3>Pellentesque fringilla at nulla cursus</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae pariatur natus a facilis placeat consequatur quibusdam ex tempora, quas odit, sunt rem aut dolores ab? Neque reprehenderit consequuntur error natus?</p>
+      </div>
+      <div class="site-link-whiteboard">
         <h3>Take a look for yourself.</h3>
-        <div class="note green" id="page-link">
-          <h2>whatToDo?</h2>
-          <button type="button" class="button-page">Go</button>
+        <div class="yellow">
+          <div class="note-text">
+            <h2>whatToDo?</h2>
+            <button type="button" class="button-page">Go</button>
+          </div>
         </div>
       </div>
     </div>
@@ -83,8 +94,10 @@
           <li>Socials</li>
         </ul>
       </div>
-      <img class="footer-logo" src="#" alt="what ToDo logo.">
-      <a class="footer-link" href="#">Smalltime: The Collection</a>
+      <div class="footer-bottom">
+        <img class="footer-logo" src="assets/images/whatToDo.png" alt="what ToDo logo.">
+        <a class="footer-link" href="#">Smalltime: The Collection</a>
+      </div>
     </div>
   </div>
 </body>
